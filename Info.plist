@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>Image Snatch Pro</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.imagedownloader.safari</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>ImageSnatchPro</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>10.12</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2025 Image Downloader. All rights reserved.</string>
+    <key>SFSafariExtension</key>
+    <dict>
+        <key>Author</key>
+        <string>Image Downloader Team</string>
+        <key>Builder Version</key>
+        <string>14C18</string>
+        <key>CFBundleDisplayName</key>
+        <string>Image Snatch Pro</string>
+        <key>CFBundleIdentifier</key>
+        <string>com.imagedownloader.safari.extension</string>
+        <key>CFBundleShortVersionString</key>
+        <string>1.0.0</string>
+        <key>CFBundleVersion</key>
+        <string>1</string>
+        <key>Content</key>
+        <dict>
+            <key>Scripts</key>
+            <dict>
+                <key>Start</key>
+                <array>
+                    <string>shared.js</string>
+                    <string>content.js</string>
+                </array>
+            </dict>
+        </dict>
+        <key>Description</key>
+        <string>Browse and download images on the web</string>
+        <key>DeveloperIdentifier</key>
+        <string>XXXXXXXXXX</string>
+        <key>ExtensionInfoDictionaryVersion</key>
+        <string>1.0</string>
+        <key>Permissions</key>
+        <dict>
+            <key>Website Access</key>
+            <dict>
+                <key>Allowed Domains</key>
+                <array>
+                    <string>*</string>
+                </array>
+                <key>Include Secure Pages</key>
+                <true/>
+                <key>Level</key>
+                <string>All</string>
+            </dict>
+        </dict>
+        <key>Popup</key>
+        <string>popup.html</string>
+        <key>Settings</key>
+        <array>
+            <dict>
+                <key>DefaultValue</key>
+                <string></string>
+                <key>FriendlyName</key>
+                <string>Download Path</string>
+                <key>Key</key>
+                <string>downloadPath</string>
+                <key>Type</key>
+                <string>TextField</string>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <string>original</string>
+                <key>FriendlyName</key>
+                <string>Filename Pattern</string>
+                <key>Key</key>
+                <string>filenamePattern</string>
+                <key>Type</key>
+                <string>PopUpButton</string>
+                <key>Values</key>
+                <array>
+                    <string>original</string>
+                    <string>timestamp</string>
+                    <string>counter</string>
+                    <string>domain</string>
+                </array>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <false/>
+                <key>FriendlyName</key>
+                <string>Open After Download</string>
+                <key>Key</key>
+                <string>openAfterDownload</string>
+                <key>Type</key>
+                <string>CheckBox</string>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <true/>
+                <key>FriendlyName</key>
+                <string>Avoid Duplicates</string>
+                <key>Key</key>
+                <string>avoidDuplicates</string>
+                <key>Type</key>
+                <string>CheckBox</string>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <integer>0</integer>
+                <key>FriendlyName</key>
+                <string>Minimum Width</string>
+                <key>Key</key>
+                <string>defaultMinWidth</string>
+                <key>Type</key>
+                <string>TextField</string>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <integer>0</integer>
+                <key>FriendlyName</key>
+                <string>Minimum Height</string>
+                <key>Key</key>
+                <string>defaultMinHeight</string>
+                <key>Type</key>
+                <string>TextField</string>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <true/>
+                <key>FriendlyName</key>
+                <string>Include Background Images</string>
+                <key>Key</key>
+                <string>includeBackgrounds</string>
+                <key>Type</key>
+                <string>CheckBox</string>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <integer>3</integer>
+                <key>FriendlyName</key>
+                <string>Max Concurrent Downloads</string>
+                <key>Key</key>
+                <string>maxConcurrentDownloads</string>
+                <key>Type</key>
+                <string>Slider</string>
+                <key>MinimumValue</key>
+                <integer>1</integer>
+                <key>MaximumValue</key>
+                <integer>10</integer>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <integer>100</integer>
+                <key>FriendlyName</key>
+                <string>Download Delay (ms)</string>
+                <key>Key</key>
+                <string>downloadDelay</string>
+                <key>Type</key>
+                <string>Slider</string>
+                <key>MinimumValue</key>
+                <integer>0</integer>
+                <key>MaximumValue</key>
+                <integer>2000</integer>
+            </dict>
+            <dict>
+                <key>DefaultValue</key>
+                <true/>
+                <key>FriendlyName</key>
+                <string>Enable Notifications</string>
+                <key>Key</key>
+                <string>enableNotifications</string>
+                <key>Type</key>
+                <string>CheckBox</string>
+            </dict>
+        </array>
+        <key>Website</key>
+        <string>https://github.com/PactInteractive/image-downloader</string>
+    </dict>
+</dict>
+</plist>
